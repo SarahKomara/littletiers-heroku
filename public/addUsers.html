@@ -50,9 +50,14 @@ function add(){
             longitude,            
         }
         
-        // post use data
-        // const url = 'http://138.197.111.251:3001/add';
-        const url = 'http://localhost:3001/add';
+// ************************************
+   //  DIGITAL OCEAN ISSUES
+// ************************************
+//     // post user
+//     const url = 'http://64.227.4.147:3001/add';
+    
+    const url = "/add";
+        
         superagent
             .post(url)
             .send(user)
